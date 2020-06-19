@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:padding="5dp">
+
+    <TextView
+        android:padding="3dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Country Name"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/country_name"
+        android:textAlignment="textStart"
+        android:singleLine="true"
+        android:layout_weight="40"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="60"
+        android:weightSum="12">
+
+        <TextView
+            android:layout_margin="1dp"
+            android:id="@+id/total_cases"
+            android:textColor="@android:color/black"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="3,200"
+            android:textSize="20sp"
+            android:layout_weight="4"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_margin="1dp"
+            android:id="@+id/deaths"
+            android:textColor="@android:color/black"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="5000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="4"/>
+
+
+        <TextView
+            android:layout_margin="1dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/recovered"
+            android:padding="3dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1000"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="4"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
